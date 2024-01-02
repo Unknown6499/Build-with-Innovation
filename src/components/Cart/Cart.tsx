@@ -5,12 +5,13 @@ import { useAppSelector } from '../store';
 
 const Cart = () => {
   const cartItem = useAppSelector(state => state.cart.items)
+  console.log(cartItem.length === 0);
   return (
     <Card className={classes.cart}>
       <h2 style={{ color: "black" }}>Your Shopping Cart</h2>
       <ul>
         {cartItem.map((item) => (
-          <CartItem item={item} key={item.id}/>
+          <CartItem item={item} key={item.id} />
         ))}
       </ul>
     </Card>

@@ -1,0 +1,38 @@
+.header {
+  max-width: 60rem;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+ul{
+    list-style: none;
+}
+.list {
+  display: flex;
+  gap: 1rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: var(--color-primary-400);
+}
+
+.list a:hover,
+.list a.active {
+  color: var(--color-primary-800);
+}
+
+.searchResults {
+  position: absolute;
+  top: 4rem; 
+  left: 27vw;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+  width: 7rem;
+  border:none;
+  background-color: transparent;
+}
